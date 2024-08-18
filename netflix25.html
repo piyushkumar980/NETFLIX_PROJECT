@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix.in</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+      .container {
+        position: relative;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        max-height: 5.5rem;
+        margin-bottom: 1px;
+        box-shadow: 0.5px 0.15px;
+        background-color: black;
+      }
+      .netflix-logo {
+        opacity: 1;
+        height: 11rem;
+        width: 10.5rem;
+        margin-left: 3rem;
+        margin-top: 1.1rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+        z-index: 10;
+      }
+      .header-sign-out {
+        font-family: netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+          sans-serif;
+        margin-right: 2.3rem;
+        margin-top: 1.4rem;
+        margin-bottom: 1.3rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: white;
+      }
+      .header-sign-out:hover {
+        text-decoration: underline;
+      }
+      .video {
+        padding-top: 1rem;
+        width: 100%;
+        height: 31.7rem;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img class="netflix-logo" src="images/logo.svg" alt="keg.hsf" />
+        <a
+          class="header-sign-out"
+          href="http://127.0.0.1:5500/netflix%20clone/netflix10.html"
+          >Sign Out</a
+        >
+      </div>
+      <div class="videos">
+        <video id="video1" class="video" controls>
+          <source src="CARTOONS-VDO/kapil1.mp4" type="video/mp4" />
+          kapil sharma
+        </video>
+      </div>
+    </div>
+  </body>
+</html>

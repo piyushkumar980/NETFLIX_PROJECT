@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix.in</title>
+    <link rel="stylesheet" href="netflix14.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img class="netflix-logo" src="images/logo.svg" alt="keg.hsf" />
+        <a
+          class="header-sign-out"
+          href="http://127.0.0.1:5500/netflix%20clone/netflix10.html"
+          >Sign Out</a
+        >
+      </div>
+      <div class="images">
+        <img
+          class="thumbnail"
+          id="img1"
+          onclick="showVideo('video1')"
+          src="cartoon-img/worlscup final.jpg"
+          alt=""
+        />
+        <img
+          class="thumbnail"
+          id="img2"
+          onclick="showVideo('video2')"
+          src="cartoon-img/football.jpg"
+          alt=""
+        />
+        <img
+          class="thumbnail"
+          id="img3"
+          onclick="showVideo('video3')"
+          src="cartoon-img/chess.jpg"
+          alt=""
+        />
+        <img
+          class="thumbnail"
+          id="img4"
+          onclick="showVideo('video4')"
+          src="cartoon-img/badminton.jpg"
+          alt=""
+        />
+        <img
+          class="thumbnail"
+          id="img4"
+          onclick="showVideo('video5')"
+          src="cartoon-img/basketball.jpg"
+          alt=""
+        />
+      </div>
+      <div class="videos">
+        <video id="video1" class="video" controls>
+          <source src="CARTOONS-VDO/world cup.mp4" type="video/mp4" />
+          adbhut chitrakaar
+        </video>
+
+        <video id="video2" class="video" controls>
+          <source src="CARTOONS-VDO/football.mp4" type="video/mp4" />
+          anokhi kursi
+        </video>
+
+        <video id="video3" class="video" controls>
+          <source src="CARTOONS-VDO/chess.mp4" type="video/mp4" />
+          anshu ki baarish
+        </video>
+
+        <video id="video4" class="video" controls>
+          <source src="CARTOONS-VDO/badminton.mp4" type="video/mp4" />
+          back t school
+        </video>
+
+        <video id="video5" class="video" controls>
+          <source src="CARTOONS-VDO/basketball.mp4" type="video/mp4" />
+          detective team
+        </video>
+      </div>
+    </div>
+    <script>
+      function showVideo(videoId) {
+        // Hide all videos
+        const videos = document.querySelectorAll(".video");
+        videos.forEach((video) => {
+          video.style.display = "none";
+        });
+
+        // Hide all images
+        const images = document.querySelector(".images");
+        images.style.display = "none";
+
+        // Show the selected video
+        const selectedVideo = document.getElementById(videoId);
+        selectedVideo.style.display = "block";
+
+        // Show videos container
+        const videoContainer = document.querySelector(".videos");
+        videoContainer.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
